@@ -24,7 +24,7 @@ class UserController extends Controller
      */
 
     public function test (){
-    return $this->sendResultJSON("1", 'API Got hit!!!!');
+        return $this->sendResultJSON("1", 'API Got hit!!!!');
     }
     public function registration(Request $request)
     {
