@@ -22,6 +22,10 @@ class UserController extends Controller
      *  Method to register user
      *
      */
+
+    public function test (){
+    return $this->sendResultJSON("1", 'API Got hit!!!!');
+    }
     public function registration(Request $request)
     {
         try {

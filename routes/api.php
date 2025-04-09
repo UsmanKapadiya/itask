@@ -23,6 +23,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::get('test-url', [UserController::class, 'test']);
 Route::get('table-list', [DinningController::class, 'getTableList']);
 Route::get('resident-list', [DinningController::class, 'getResidentList']);
 Route::get('rooms-list', [DinningController::class, 'getRoomList']);
